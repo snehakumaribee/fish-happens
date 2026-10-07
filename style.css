@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#pond{
+    position: relative;
+}
+
+#sky {
+    width: 100%;
+    height: 105vh;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+}
+ #sky img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+#water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    height: 300px;
+    width: 100%;
+    border: solid;
+}
+
+#underwater {
+
+    height: 950px;
+    position: relative;
+    background: linear-gradient(
+        to bottom,
+        #b9d6e5 0%,
+        #608b9a 30%,
+        #387fa0 65%,
+        #104365 100%,
+        #001c29 100%
+    );
+}
+#underwater img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+#addfish{
+    position: fixed;
+    right: 30px;
+    top: 50%;
+
+    z-index: 9999;
+}
